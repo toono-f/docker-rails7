@@ -1,24 +1,21 @@
 # README
+## 初期設定
+1. アプリケーションのビルド
+```
+docker compose build
+```
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+2. DB作成
+```
+docker compose run --rm web rake db:create
+```
 
-Things you may want to cover:
+3. Railsアプリケーション起動
+```
+docker compose up -d
+```
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+4. Railsアプリケーション終了
+```
+docker compose down
+```

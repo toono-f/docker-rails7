@@ -15,7 +15,7 @@ docker compose run --rm web rake db:create
 docker compose up -d
 ```
 
-4. Railsアプリケーション終了
+Railsアプリケーションの終了
 ```
 docker compose down
 ```

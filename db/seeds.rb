@@ -1,9 +1,9 @@
 users = [
-  ["たけし", 20, "サッカー"], 
-  ["さおり", 23, "バレー"], 
-  ["たろう", 22, "野球"]
+  ['たけし', 20, 'サッカー'],
+  ['さおり', 23, 'バレー'],
+  ['たろう', 22, '野球']
 ]
 
-users.each do |name, age, hobby| 
-  User.create(name: name, age: age, hobby: hobby)
+users.each do |name, age, hobby|
+  User.create(name:, age:, hobby:)
 end

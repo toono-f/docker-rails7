@@ -20,7 +20,7 @@ Railsアプリケーションの終了
 docker compose down
 ```
 
-Railsコンテナの操作
+Railsコンテナーの操作
 ```
 docker-compose exec web bash
 ```

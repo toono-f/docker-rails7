@@ -5,4 +5,6 @@ Rails.application.routes.draw do
   # root "articles#index"
 
   resources :users, only: :index
+
+  resources :todos, only: %i[index create update destroy]
 end

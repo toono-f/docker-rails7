@@ -18,8 +18,11 @@ seed:
 migrate:
 	docker compose run --rm web rake db:migrate
 
+migrate-reset:
+	docker compose run --rm web rake db:migrate:reset
+
 setup:
-	make build db-create migrate seed
+	make build db-create migrate
 
 bash:
 	docker-compose exec web bash

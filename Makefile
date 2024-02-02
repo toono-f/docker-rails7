@@ -12,8 +12,14 @@ up:
 down:
 	docker compose down
 
+seed:
+	docker compose run --rm web rake db:seed
+
 migrate:
 	docker compose run --rm web rake db:migrate
+
+setup:
+	make build db-create migrate seed
 
 bash:
 	docker-compose exec web bash

@@ -1,21 +1,14 @@
 # README
 ## 初期設定
-1. アプリケーションのビルド
+
+### セットアップ
 ```
-make build
+make setup
 ```
 
-2. DB作成
-```
-make db-create
-```
+### 起動・終了・操作
 
-3. DBマイグレーション
-```
-make migrate
-```
-
-4. Railsアプリケーション起動
+Railsアプリケーションの起動
 ```
 make up
 ```

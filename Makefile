@@ -26,3 +26,9 @@ setup:
 
 bash:
 	docker-compose exec web bash
+
+rubocop:
+	docker-compose run --rm web rubocop
+
+rubocop-fix:
+	docker-compose run --rm web rubocop -a

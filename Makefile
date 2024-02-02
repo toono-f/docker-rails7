@@ -12,5 +12,8 @@ up:
 down:
 	docker compose down
 
+migrate:
+	docker compose run --rm web rake db:migrate
+
 bash:
 	docker-compose exec web bash

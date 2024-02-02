@@ -2,25 +2,30 @@
 ## 初期設定
 1. アプリケーションのビルド
 ```
-docker compose build
+make build
 ```
 
 2. DB作成
 ```
-docker compose run --rm web rake db:create
+make db-create
 ```
 
-3. Railsアプリケーション起動
+3. DBマイグレーション
 ```
-docker compose up -d
+make migrate
+```
+
+4. Railsアプリケーション起動
+```
+make up
 ```
 
 Railsアプリケーションの終了
 ```
-docker compose down
+make down
 ```
 
 Railsコンテナーの操作
 ```
-docker-compose exec web bash
+make bash
 ```
